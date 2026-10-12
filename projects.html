@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Mini Project</title>
+    <!-- หากไฟล์ HTML กับ CSS อยู่โฟลเดอร์เดียวกัน ให้ใช้ href="projects_style.css" -->
+    <link rel="stylesheet" href="./css/projects_style.css">
+</head>
+<body>
+    <header class="header">
+        <div>
+            <h1>Projects</h1>
+            <p>ผลงานของฉัน</p>
+        </div>
+    </header>
+
+    <main class="container">
+        
+        <!-- Project 1: รูปซ้าย ข้อความขวา -->
+        <div class="project-card">
+            <input type="checkbox" id="proj1" class="toggle-checkbox">
+            
+            <div class="card-layout-1">
+                <div class="p-img">
+                    <img src="./images/pro1.jpg" alt="รูปโปรเจค 1">
+                </div>
+                <div class="p-content">
+                    <h2>คันเร่งไฟฟ้า จาก esp32 </h2>
+                    <p>ลิ้งค์ตัวอย่างโปรเจค: <a href="https://youtube.com/shorts/I4a9t8wyOAs?si=WONGpcrR_APreqAI" target="_blank">YT</a></p>
+                    <label for="proj1" class="p-hint toggle-label"></label>
+                </div>
+            </div>
+            
+            <div class="p-details">
+                <div class="p-details-box">
+                    <p>. Programmable Throttle By Wire (คันเร่งไฟฟ้าแบบกำหนดแมพได้)
+
+ฟีเจอร์: ยกเลิกสายสลิง เปลี่ยนเป็นการอ่านค่าเซนเซอร์แล้วส่งผ่าน CAN Bus ไปสั่งสเต็ปเปอร์มอเตอร์คุมลิ้นปีกผีเสื้อ
+
+สิ่งที่ผู้ใช้ได้รับ: สามารถปรับ "Riding Modes" ได้อิสระ เช่น โหมด Rain (บิดคันเร่งลึก แต่ลิ้นเปิดช้าๆ เพื่อกันล้อสไลด์) หรือ โหมด Track (บิดนิดเดียว ลิ้นเปิด 100% ดึงหน้าหงาย) รถจะตอบสนองเข้ากับสไตล์การขี่และสภาพถนนได้ทันทีโดยไม่ต้องไปยุ่งกับเครื่องยนต์
+
+2. Seamless Quickshifter & Auto-Blip (เปลี่ยนเกียร์โดยไม่เสียกำลัง)
+
+ฟีเจอร์: ระบบทำงานร่วมกับคันเร่งไฟฟ้าเพื่อตัดการจุดระเบิด (Up-shift) หรือสั่งเบิ้ลเครื่องยนต์อัตโนมัติ (Down-shift) ให้รอบสัมพันธ์กันพอดีเมื่อเซนเซอร์เกียร์ถูกกระตุ้น
+
+สิ่งที่ผู้ใช้ได้รับ: อัตราเร่งต่อเนื่องไม่มีสะดุด (Seamless Acceleration) ไม่ต้องเสียเวลากำคลัตช์ยกคันเร่ง ช่วยลดเวลาต่อรอบ (Lap time) และลดอาการล้อหลังล็อคหรือท้ายสะบัดเวลาเชนจ์เกียร์ลงหนักๆ</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 2: รูปขวา ข้อความซ้าย -->
+        <div class="project-card">
+            <input type="checkbox" id="proj2" class="toggle-checkbox">
+            
+            <div class="card-layout-2">
+                <div class="p-content">
+                    <h2>simracing จากรถจริงๆ</h2>
+                    <p>ลิ้งค์ตัวอย่างโปรเจค: <a href="https://youtu.be/S3ZlKC1mpPk" target="_blank">YT</a></p>
+                    <label for="proj2" class="p-hint toggle-label"></label>
+                </div>
+                <div class="p-img">
+                    <img src="./images/pro2.jpg" alt="รูปโปรเจค 2">
+                </div>
+            </div>
+            
+            <div class="p-details">
+                <div class="p-details-box">
+                    <p>โปรเจคนี้สร้างขึ้นเพื่อทำ simracing ใช้งานเองด้วยงบประหยัด โดยเกมที่เราจะใช้ทดสอบกันคือride3,ride4
+                        เริ่มโดยใช้ปุกกรณ์เพียงไม่กี่อย่าง เช่น rasberry pico, mpu6050(เซนเซอร์วัดองศาเอียง),คันเร่งไฟฟ้า,โมเดลรถจริงๆ,และอื่นๆอีกนิดหน่อย
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <input type="checkbox" id="proj3" class="toggle-checkbox">
+            
+            <div class="card-layout-3">
+                <div class="p-top">
+                    <div class="p-img">
+                        <img src="./images/pro3.jpg" alt="รูปโปรเจค 3">
+                    </div>
+                    <h2>เซอร์โวท่อเงียบ</h2>
+                </div>
+                <div class="p-bottom right-align">
+                    <label for="proj3" class="p-hint toggle-label"></label>
+                </div>
+            </div>
+            
+            <div class="p-details">
+                <div class="p-details-box">
+                    <p>โปรเจคนี้เป็นการพัฒนาเซอร์โวท่อเงียบสำหรับรถจักรยานยนต์ โดยใช้เทคโนโลยีใหม่ๆ ในการลดเสียงรบกวนและเพิ่มประสิทธิภาพการทำงานของเครื่องยนต์ แถมสามารถหลบตำรวจได้อีกด้วย</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="back-nav"><a href="index.html">กลับหน้าหลัก</a></div>
+    </main>
+</body>
+</html>

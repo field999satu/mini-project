@@ -1,0 +1,286 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* =========================
+   BODY
+========================= */
+
+body {
+    background-image: url('../images/background.gif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+    background: linear-gradient(to right, #B9DCF0, #F7D6D1);
+    color: #fff;
+
+    padding: 50px;
+    text-align: center;
+
+    box-shadow: 0 4px 6px #F7D6D1;
+}
+
+
+/* =========================
+   CONTAINER
+========================= */
+
+.container {
+    padding: 10px 200px;
+    margin-top: 20px;
+}
+
+
+/* =========================
+   MAIN CARD
+========================= */
+
+.card {
+    background-color: #fdfdfd;
+
+    border-radius: 20px;
+
+    display: grid;
+    grid-template-columns: 4fr 6fr;
+
+    box-shadow: 2px 10px 8px rgba(0, 0, 0, 0.1);
+
+    border: 1px solid #eeeeee;
+
+    overflow: hidden;
+}
+
+
+/* =========================
+   PROFILE
+========================= */
+
+.profile-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-photo img {
+    width: 320px;
+    height: 400px;
+
+    object-fit: cover;
+    margin-left: 50px;
+}
+
+
+/* =========================
+   NAVIGATION AREA
+========================= */
+
+.nav {
+    padding-top: 20px;
+}
+
+
+/* Software Engineering */
+
+.sakar {
+    color: rgb(0, 102, 255);
+    font-size: 20px;
+}
+
+
+
+.name {
+    font-size: 50px;
+    font-weight: bold;
+    color: #333;
+}
+
+
+
+
+.last-name {
+    font-size: 30px;
+    font-weight: bold;
+
+    margin-bottom: 5px;
+
+    color: #333;
+}
+
+
+
+.tanad {
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   NAVIGATION MENU
+========================= */
+
+.nav ul {
+    display: flex;
+    flex-direction: column;
+
+    gap: 15px;
+    margin-left: 0;
+}
+
+
+/* Menu Item */
+
+.nav-item {
+    background-color: rgba(255, 196, 254, 0.7);
+    border-radius: 20px;
+    list-style-type: none;
+    font-size: 20px;
+    box-shadow: 2px 10px 8px#333;
+    width: fit-content;
+    transition:
+        transform 0.3s ease,
+        background-color 0.3s ease;
+}
+/* Menu Link */
+.nav-item a {
+    display: block;
+    padding: 12px 30px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+/* =========================
+   MENU HOVER
+========================= */
+.nav-item:hover {
+    transform: translateX(20px);
+    background-color: aqua;
+}
+/* =========================
+   MENU POSITION
+========================= */
+.nav-item:nth-child(1) {
+    margin-left: 200px;
+}
+
+.nav-item:nth-child(2) {
+    margin-left: 100px;
+}
+
+.nav-item:nth-child(3) {
+    margin-left: 0;
+}
+/* =========================
+   CHANGE PROFILE IMAGE
+========================= */
+.card:has(.nav-item:nth-child(1):hover)
+.profile-photo img {
+    content: url('../images/about.png');
+}
+.card:has(.nav-item:nth-child(2):hover)
+.profile-photo img {
+    content: url('../images/project.png');
+}
+.card:has(.nav-item:nth-child(3):hover)
+.profile-photo img {
+    content: url('../images/contact.png');
+}
+/* =========================
+   SECOND CARD
+========================= */
+.card2 {
+    background-color: #fdfdfd;
+    border-radius: 20px;
+    padding: 50px;
+    margin-bottom: 20px;
+    box-shadow: 2px 10px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #eeeeee;
+}
+
+.toppict{
+    border-bottom:5px solid #e5a7ff ;
+    border-radius: 5px;
+    box-shadow: 0px 10px 8px rgba(230, 64, 252, 0.1);
+}
+.nerhaa{
+    margin: 10px;
+}
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background-color: #e5a7ff;
+
+    padding: 20px;
+
+    text-align: center;
+
+    color: #fff;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    .header {
+        padding: 30px 15px;
+    }
+
+    .header h1 {
+        font-size: 28px;
+    }
+
+    .container {
+        padding: 10px 15px;
+    }
+
+    .profile-photo img {
+        width: 250px;
+        height: 320px;
+    }
+
+    .name {
+        font-size: 40px;
+    }
+
+    .last-name {
+        font-size: 25px;
+    }
+
+    .nav-item:nth-child(1),
+    .nav-item:nth-child(2),
+    .nav-item:nth-child(3) {
+        margin-left: 0;
+    }
+
+    .nav ul {
+        align-items: center;
+    }
+
+    .card2 {
+        padding: 25px;
+    }
+
+}

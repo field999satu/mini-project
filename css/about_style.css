@@ -1,0 +1,204 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('../images/background.gif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+
+    font-family: sans-serif;
+    overflow-x: hidden;
+    
+}
+
+/* =========================================
+   HEADER SECTION
+========================================= */
+.header {
+    background: linear-gradient(to right, #e5a7ff, #f686ac);
+    color: #fff;
+    padding: 50px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(22, 228, 255, 0.873);
+}
+
+
+/* =========================================
+   CONTAINER & MAIN CARD
+========================================= */
+.container {
+    padding: 50px 20px; 
+    max-width: 900px; 
+    margin: 0 auto;
+}
+
+.card {
+    background-color: #fdfdfd;
+    border-radius: 8px;
+    border: 1px solid #eba2ff;
+    box-shadow: 0 4px 15px rgba(9, 30, 66, 0.08);
+    padding: 40px; /* ระยะห่างภายในขอบกระดาษ */
+    display: flex;
+    flex-direction: column;
+    gap: 40px; /* ระยะห่างระหว่าง ส่วนบน, ส่วนกลาง, ส่วนล่าง */
+}
+
+/* =========================================
+   TOP SECTION (Text Left, Image Right)
+========================================= */
+.about-top {
+    display: grid;
+    grid-template-columns: 6fr 4fr; /* แบ่งพื้นที่ ข้อความ 6 ส่วน รูป 4 ส่วน */
+    gap: 20px;
+    align-items: center;
+}
+
+.details ul {
+    list-style: none;
+    font-size: 18px;
+    line-height: 2; /* เพิ่มระยะห่างบรรทัดให้อ่านง่าย */
+}
+
+.details span {
+    color: var(--text-heading);
+    display: inline-block;
+    width: 90px; /* จัดให้เครื่องหมาย colon (:) ตรงกัน */
+}
+
+.about-photo {
+    width: 100%;
+    aspect-ratio: 1 / 1; /* บังคับให้เป็นกรอบสี่เหลี่ยมจัตุรัสตาม Figma */
+    background-color: #EAECEF;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.about-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* =========================================
+   MIDDLE SECTION (2x2 Grid Boxes)
+========================================= */
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* แบ่งเป็น 2 คอลัมน์เท่าๆ กัน */
+    gap: 20px;
+}
+
+.grid-box1 {
+    background-color: #ebebeb;
+    border-left: 5px solid #B9DCF0; /* ขอบซ้ายสีชมพู */
+    border-radius: 8px;
+    padding: 30px;
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+    transition: all 0.5s ease;
+}
+
+.grid-box2 {
+    background-color: #ebebeb;
+    border-left: 5px solid #FAEBF0; /* ขอบซ้ายสีชมพู */
+    border-radius: 8px;
+    padding: 30px;
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+    transition: all 0.5s ease;
+}
+.grid-box3 {
+    background-color: #ebebeb;
+    border-left: 5px solid #30ffd2; /* ขอบซ้ายสีชมพู */
+    border-radius: 8px;
+    padding: 30px;
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+    transition: all 0.5s ease;
+}
+.grid-box4 {
+    background-color: #ebebeb;
+    border-left: 5px solid #C4DAEB; /* ขอบซ้ายสีชมพู */
+    border-radius: 8px;
+    padding: 30px;
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+    transition: all 0.5s ease;
+}
+.grid-box5 {
+    background-color: #ebebeb;
+    border-left: 5px solid #E88E98; /* ขอบซ้ายสีชมพู */
+    border-radius: 8px;
+    padding: 30px;
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+    transition: all 0.5s ease;
+}
+
+.grid-box1:hover{
+    transform: translatex(10px);
+}
+.grid-box2:hover{
+    transform: translatex(10px);
+}
+.grid-box3:hover{
+    transform: translatex(10px);
+}
+.grid-box4:hover{
+    transform: translatex(10px);
+}
+.grid-box5:hover{
+    transform: translatex(10px);
+}
+/* =========================================
+   BOTTOM SECTION (Back Button)
+========================================= */
+.about-bottom {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.btn-back {
+    background-color: #B9DCF0; /* สีเทาอมฟ้า เหมือนปุ่มใน Figma */
+    color: #FFF;
+    text-decoration: none;
+    padding: 12px 40px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn-back:hover {
+    background-color: #f686ac; 
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* =========================================
+   RESPONSIVE (Mobile)
+========================================= */
+@media (max-width: 600px) {
+    .about-top {
+        grid-template-columns: 1fr; /* บนมือถือให้เรียงซ้อนกัน */
+        text-align: center;
+    }
+    
+    .details strong {
+        width: auto;
+    }
+    
+    .about-grid {
+        grid-template-columns: 1fr; /* กล่อง 4 ใบเรียงแนวตั้งบนมือถือ */
+    }
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Mini Project</title>
+    <link rel="stylesheet" href="./css/contact_style.css">
+</head>
+<body>
+    <header class="header">
+        <div>
+            <h1>Contact</h1>
+            <p>ช่องทางการติดต่อ</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="contact-wrapper">
+        
+            <!-- ปุ่ม Social (เปลี่ยน href เป็นลิงก์ของคุณได้เลย) -->
+            <div class="social-links">
+                <a href="https://github.com/" target="_blank" class="contact-btn">🐈 GitHub</a>
+                <a href="#" class="contact-btn">✉️ Mail</a>
+                <a href="#" class="contact-btn">💬 LINE</a>
+            </div>
+
+            <!-- กล่องฟอร์มที่พิมพ์ได้จริง -->
+            <div class="contact-form-box">
+                <!-- ใส่สคริปต์ onsubmit ดักไว้ เพื่อให้กดแล้วเด้ง Alert หลอกๆ -->
+                <form>
+                    
+                    <input type="text" class="real-input" placeholder="ชื่อผู้ส่ง" required>
+                    
+                    <input type="email" class="real-input" placeholder="เมลผู้ส่ง" required>
+                    
+                    <textarea class="real-textarea" placeholder="เขียนข้อความที่นี่..." required></textarea>
+                    
+                    <div class="form-footer">
+                        <button type="submit" class="submit-btn">ส่งข้อความ</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+        <div class="back-nav"><a href="index.html">กลับหน้าหลัก</a></div>
+    </main>
+</body>
+</html>
