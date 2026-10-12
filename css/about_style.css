@@ -37,6 +37,7 @@ body {
     margin: 0 auto;
 }
 
+
 .card {
     background-color: #fdfdfd;
     border-radius: 8px;
@@ -45,7 +46,7 @@ body {
     padding: 40px; /* ระยะห่างภายในขอบกระดาษ */
     display: flex;
     flex-direction: column;
-    gap: 40px; /* ระยะห่างระหว่าง ส่วนบน, ส่วนกลาง, ส่วนล่าง */
+    gap: 40px; 
 }
 
 /* =========================================
@@ -53,7 +54,7 @@ body {
 ========================================= */
 .about-top {
     display: grid;
-    grid-template-columns: 6fr 4fr; /* แบ่งพื้นที่ ข้อความ 6 ส่วน รูป 4 ส่วน */
+    grid-template-columns: 6fr 4fr; 
     gap: 20px;
     align-items: center;
 }
@@ -61,18 +62,18 @@ body {
 .details ul {
     list-style: none;
     font-size: 18px;
-    line-height: 2; /* เพิ่มระยะห่างบรรทัดให้อ่านง่าย */
+    line-height: 2;
 }
 
 .details span {
-    color: var(--text-heading);
+    color: #f686ac;
     display: inline-block;
-    width: 90px; /* จัดให้เครื่องหมาย colon (:) ตรงกัน */
+    width: 90px; 
 }
 
 .about-photo {
     width: 100%;
-    aspect-ratio: 1 / 1; /* บังคับให้เป็นกรอบสี่เหลี่ยมจัตุรัสตาม Figma */
+    aspect-ratio: 1 / 1;
     background-color: #EAECEF;
     border-radius: 8px;
     overflow: hidden;
@@ -89,13 +90,13 @@ body {
 ========================================= */
 .about-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* แบ่งเป็น 2 คอลัมน์เท่าๆ กัน */
+    grid-template-columns: 1fr 1fr;
     gap: 20px;
 }
 
 .grid-box1 {
     background-color: #ebebeb;
-    border-left: 5px solid #B9DCF0; /* ขอบซ้ายสีชมพู */
+    border-left: 5px solid #B9DCF0; 
     border-radius: 8px;
     padding: 30px;
     text-align: center;
@@ -106,7 +107,7 @@ body {
 
 .grid-box2 {
     background-color: #ebebeb;
-    border-left: 5px solid #FAEBF0; /* ขอบซ้ายสีชมพู */
+    border-left: 5px solid #FAEBF0; 
     border-radius: 8px;
     padding: 30px;
     text-align: center;
@@ -116,7 +117,7 @@ body {
 }
 .grid-box3 {
     background-color: #ebebeb;
-    border-left: 5px solid #30ffd2; /* ขอบซ้ายสีชมพู */
+    border-left: 5px solid #30ffd2;
     border-radius: 8px;
     padding: 30px;
     text-align: center;
@@ -126,7 +127,7 @@ body {
 }
 .grid-box4 {
     background-color: #ebebeb;
-    border-left: 5px solid #C4DAEB; /* ขอบซ้ายสีชมพู */
+    border-left: 5px solid #C4DAEB;
     border-radius: 8px;
     padding: 30px;
     text-align: center;
@@ -136,7 +137,7 @@ body {
 }
 .grid-box5 {
     background-color: #ebebeb;
-    border-left: 5px solid #E88E98; /* ขอบซ้ายสีชมพู */
+    border-left: 5px solid #E88E98;
     border-radius: 8px;
     padding: 30px;
     text-align: center;
@@ -170,7 +171,7 @@ body {
 }
 
 .btn-back {
-    background-color: #B9DCF0; /* สีเทาอมฟ้า เหมือนปุ่มใน Figma */
+    background-color: #B9DCF0; 
     color: #FFF;
     text-decoration: none;
     padding: 12px 40px;
@@ -190,7 +191,7 @@ body {
 ========================================= */
 @media (max-width: 600px) {
     .about-top {
-        grid-template-columns: 1fr; /* บนมือถือให้เรียงซ้อนกัน */
+        grid-template-columns: 1fr;
         text-align: center;
     }
     
@@ -199,6 +200,6 @@ body {
     }
     
     .about-grid {
-        grid-template-columns: 1fr; /* กล่อง 4 ใบเรียงแนวตั้งบนมือถือ */
+        grid-template-columns: 1fr; 
     }
 }
